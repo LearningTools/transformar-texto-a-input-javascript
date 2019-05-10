@@ -1,0 +1,191 @@
+/*----------  Reset Estilos  ----------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 0.5rem;
+	font-weight: 500;
+	line-height: 1.2;
+}
+h1 {
+	font-size: 2.5rem;
+}
+
+h2{
+	font-size: 2rem;
+}
+
+h3{
+	font-size: 1.75rem;
+}
+
+h4{
+	font-size: 1.5rem;
+}
+
+h5{
+	font-size: 1.25rem;
+}
+
+h6{
+	font-size: 1rem;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+a{
+	text-decoration: none;
+}
+/* HTML5 restablecimiento de la función de visualización para navegadores antiguos */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+.contenedor-full {
+width: 100%;
+margin-right: auto;
+margin-left: auto;
+}
+
+.contenedor {
+	width: 95%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.fila{
+	position:relative;
+	margin:auto;
+	width:100%;
+	height: auto;
+	clear:both;
+	display:table;
+}
+
+[class*="col-"]{
+	float:left;
+	/*border:1px solid black;Comentar cuando se vaya a usar el archivo de grilla*/
+	padding: 0 15px;
+	box-sizing: border-box;
+}
+
+/*=====================================
+=            media Queries            =
+=====================================*/
+/* Dispositivos extra grandes (laptops y computadoras de escritorio grandes, 1281px y más pixel)*/
+@media(min-width: 1281px){
+	.col-xl-12{width:100%;}
+	.col-xl-11{width:91.66666667%;}
+	.col-xl-10{width:83.33333333%;}
+	.col-xl-9{width:75%;}
+	.col-xl-8{width:66.66666667%;}
+	.col-xl-7{width:58.33333333%;}
+	.col-xl-6{width:50%;}
+	.col-xl-5{width:41.66666667%;}
+	.col-xl-4{width: 33.33333333%;}
+	.col-xl-3{width: 25%;}
+	.col-xl-2 {width: 16.66666667%;}
+	.col-xl-1 {width: 8.33333333%;}
+
+	.col-xl-offset-4{margin-left: 33.33333333%;}
+	.col-xl-offset-3{margin-left: 25%;}
+	.col-xl-offset-2{margin-left: 16.66666667%;}
+	.col-xl-offset-1{margin-left: 8.33333333%;}
+}
+
+/* Dispositivos medianos (tabletas de paisaje, 1025px y más pixels)*/
+@media(min-width: 1025px) and (max-width: 1280px){
+	.col-l-12{width:100%;}
+	.col-l-11{width:91.66666667%;}
+	.col-l-10{width:83.33333333%;}
+	.col-l-9{width:75%;}
+	.col-l-8{width:66.66666667%;}
+	.col-l-7{width:58.33333333%;}
+	.col-l-6{width:50%;}
+	.col-l-5{width:41.66666667%;}
+	.col-l-4{width: 33.33333333%;}
+	.col-l-3{width: 25%;}
+	.col-l-2{width: 16.66666667%;}
+	.col-l-1{width: 8.33333333%;}
+
+	.col-l-offset-4{margin-left: 33.33333333%;}
+	.col-l-offset-3{margin-left: 25%;}
+	.col-l-offset-2{margin-left: 16.66666667%;}
+	.col-l-offset-1{margin-left: 8.33333333%;}
+}
+/* Dispositivos pequeños (tabletas de retratos y teléfonos grandes, 768px y más)*/
+@media(min-width: 768px) and (max-width: 1024px){
+	.col-m-12{width:100%;}
+	.col-m-11{width:91.66666667%;}
+	.col-m-10{width:83.33333333%;}
+	.col-m-9{width:75%;}
+	.col-m-8{width:66.66666667%;}
+	.col-m-7{width:58.33333333%;}
+	.col-m-6{width:50%;}
+	.col-m-5{width:41.66666667%;}
+	.col-m-4{width: 33.33333333%;}
+	.col-m-3{width: 25%;}
+	.col-m-2{width: 16.66666667%;}
+	.col-m-1{width: 8.33333333%;}
+
+	.col-m-offset-4{margin-left: 33.33333333%;}
+	.col-m-offset-3{margin-left: 25%;}
+	.col-m-offset-2{margin-left: 16.66666667%;}
+	.col-m-offset-1{margin-left: 8.33333333%;}
+
+}
+/* Dispositivos pequeños (teléfonos, 767px y abajo)*/
+@media(min-width: 481px) and (max-width: 767px){
+	.col-s-12{width:100%;}
+}
+
+/*Dispositivos mobiles*/
+@media(min-width: 320px) and (max-width: 480px){
+	.col-xs-12{width: 100%;}
+}
+
+/*=====  End of media Queries  ======*/
